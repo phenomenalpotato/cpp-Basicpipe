@@ -15,7 +15,7 @@ memory-sanitizer:
 	${COMP} -std=c++11 -Wall -Wextra ${SRC}/${FILE} -fsanitize=memory -o ${SRC}/${BIN} -g -fsanitize-memory-track-origins
 
 execute:
-	${SRC}/${BIN}
+	${SRC}/${BIN} > diagnose.txt
 
 delete:
 	@echo "Deleting Bin executable"
