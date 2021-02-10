@@ -1,12 +1,18 @@
-LIBS = -lcurl
 BIN = binario
 FILE = binario.cpp
-COMP = clang
+COMP = clang++-8
+COMP2 = g++
 SRC = Bin
 
 all:	
 	@echo Compiling...
-	g++ -std=c++11 -Wall -Wextra -pedantic -Werror ${SRC}/${FILE} ${LIBS} -o ${SRC}/${BIN}
+	${COMP} -std=c++11 -Wall -Wextra -pedantic -Werror ${SRC}/${FILE} ${LIBS} -o ${SRC}/${BIN}
+
+address-sanitizer:
+	${COMP} -std=c++11 -Wall -Wextra -pedantic -Werror ${SRC}/${FILE} -fsanitize=address -o ${SRC}/${BIN} -g
+
+memory-sanitizer:
+	${COMP} -std=c++11 -Wall -Wextra ${SRC}/${FILE} -fsanitize=memory -o ${SRC}/${BIN} -g -fsanitize-memory-track-origins
 
 execute:
 	${SRC}/${BIN}
