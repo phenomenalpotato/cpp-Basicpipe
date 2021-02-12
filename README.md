@@ -3,7 +3,7 @@ A Very Basic C++ Pipeline
 
 Ideia/ Concept:
 
-<img src="IMG/pipeline.png" alt="C-Pipe" width="75%">
+<img src="IMG/pipeline.png" alt="C-Pipe" width="75%"> </img>
 
 
 <b>PURPOSE:</b>
@@ -68,7 +68,7 @@ Ideia/ Concept:
         - E.g. docker run basic-cpp-pipe:latest /bin/bash -c "make address-sanitizer; make execute &> Report-File/$@.txt; cat Report-File/$@.txt"
         
 
-<img src="IMG/Result-Inside-The-Container.jpg" alt="Result-Inside-The-Container"></img>
+<img src="IMG/Result-Inside-The-Container.jpg" alt="Result-Inside-The-Container" width="75%"></img>
 
 <b>WARNING:</b>
 
