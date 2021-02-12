@@ -56,7 +56,7 @@ Ideia/ Concept:
         - And then run the binary;
 
 
-<b>The test output will be printed in a separate file!</b>
+<b>You Can Print The Test Result Output in a Separate File:</b>
     
     - To print the Output of the program in a file: 
 
