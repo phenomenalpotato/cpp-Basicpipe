@@ -58,7 +58,7 @@ Ideia/ Concept:
 
 <b>The test output will be printed in a separate file!</b>
     
-    - To print the Output of the program: 
+    - To print the Output of the program in a file: 
 
         - make execute &> Report-File/file_name.txt
         

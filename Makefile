@@ -38,5 +38,20 @@ build-dockerfile:
 	@echo "Building DockerFile"
 	docker build --tag basic-cpp-pipe:latest .
 
+docker-run-all:
+	@docker run basic-cpp-pipe:latest /bin/bash -c "make all; make execute"
+
 docker-run-address:
-	@docker run basic-cpp-pipe:latest /bin/bash -c "make address-sanitizer"
+	@docker run basic-cpp-pipe:latest /bin/bash -c "make address-sanitizer; make execute"
+
+docker-run-memory:
+	@docker run basic-cpp-pipe:latest /bin/bash -c "make memory-sanitizer; make execute"
+
+docker-run-thread:
+	@docker run basic-cpp-pipe:latest /bin/bash -c "make thread-sanitizer; make execute"
+
+docker-run-undefined-behavior:
+	@docker run basic-cpp-pipe:latest /bin/bash -c "make undefined-behavior-sanitizer; make execute"
+
+docker-run-leak:
+	@docker run basic-cpp-pipe:latest /bin/bash -c "make leak-sanitizer; make execute"

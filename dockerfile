@@ -5,8 +5,11 @@ RUN apt-get update
 RUN apt-get install -y clang-8
 RUN apt-get install -y make
 
-ADD ./Bin /var/
+ADD ./Bin /var/Bin
 ADD ./Makefile /var/
 
 # To start the container in the /var directory 
 WORKDIR /var/ 
+
+#RUN pwd
+#RUN ls -lha
