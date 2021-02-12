@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
 
     // To check Undefined Behavior
 
-    int k = 0x7fffffff; // Number in hexadecimal (2, 147, 483, 647 in decimal) that represents the maximum positive value for a 32-bit signed binary integer
+    int k = 0x7fffffff; // Number in hexadecimal (2147483647 in decimal) that represents the maximum positive value for a 32-bit signed binary integer
 
     k += argc;
 

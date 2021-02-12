@@ -3,7 +3,7 @@ A Very Basic C++ Pipeline
 
 Ideia/ Concept:
 
-<img src="C-Pipe.jpeg" alt="pipe" width="75%">
+<img src="pipeline.png" alt="C-Pipe" width="75%">
 
 
 <b>PURPOSE:</b>
