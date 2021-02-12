@@ -3,7 +3,7 @@ A Very Basic C++ Pipeline
 
 Ideia/ Concept:
 
-<img src="pipeline.png" alt="C-Pipe" width="75%">
+<img src="IMG/pipeline.png" alt="C-Pipe" width="75%">
 
 
 <b>PURPOSE:</b>
@@ -61,9 +61,14 @@ Ideia/ Concept:
     - To print the Output of the program in a file: 
 
         - make execute &> Report-File/file_name.txt
+
+    - In the the Docker environment:
+        
+        - Just add after "; make execute &> Report-File/$@.txt; cat Report-File/$@.txt;" 
+        - E.g. docker run basic-cpp-pipe:latest /bin/bash -c "make address-sanitizer; make execute &> Report-File/$@.txt; cat Report-File/$@.txt"
         
 
-<b>IMAGEM DO OUTPUT PRINTADO!</b>
+<img src="IMG/Result-Inside-The-Container.jpg" alt="Result-Inside-The-Container"></img>
 
 <b>WARNING:</b>
 

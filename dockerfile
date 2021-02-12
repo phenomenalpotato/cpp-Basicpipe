@@ -7,6 +7,7 @@ RUN apt-get install -y make
 
 ADD ./Bin /var/Bin
 ADD ./Makefile /var/
+ADD ./Report-File /var/Report-File
 
 # To start the container in the /var directory 
 WORKDIR /var/ 
